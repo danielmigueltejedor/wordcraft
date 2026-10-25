@@ -131,7 +131,6 @@ if has appimage; then
   }
   APPDIR="$WORK/WordCraft.AppDir"
   cp -R "$STAGE" "$APPDIR"
-  mv "$APPDIR/usr/share/doc" "$WORK/doc-unused"
   # Preserve the font-free Adwaita MIT notice in the AppImage.
   install -Dm644 "$ROOT/NOTICE" "$APPDIR/usr/share/doc/wordcraft/NOTICE"
   ln -s usr/bin/wordcraft "$APPDIR/AppRun"
